@@ -6,12 +6,11 @@ casper.userAgent('Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML,
 	verbose: true,
     logLevel: "debug"
 	};*/
+
+
 casper.test.begin('Publishing Demo Test', 2, function suite(test) {
 casper.start('https://sites.accenture.com', function () 
 {
-		
-
-
 });
 casper.then(function () 
 	{
@@ -101,6 +100,6 @@ function getDateTime() {
     if(second.toString().length == 1) {
         var second = '0'+second;
     }   
-    var dateTime = 'Publishing-' + year+month+day+hour+minute+second+'.xml';   
+    var dateTime = 'PublishingRegression-' + year+month+day+hour+minute+second+'.xml';   
      return dateTime;
 }	
